@@ -2,7 +2,7 @@ import Card from '../core/Card';
 import ExpenseItem from './ExpenseItem';
 import './Expenses.css';
 
-function Expenses(props) {
+export default function Expenses(props) {
   return (
     <Card className='expenses'>
       <ExpenseItem
@@ -32,5 +32,3 @@ function Expenses(props) {
     </Card>
   );
 }
-
-export default Expenses;
