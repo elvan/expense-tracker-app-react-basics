@@ -1,5 +1,4 @@
-import React from 'react';
-import Card from './Card';
+import Card from '../core/Card';
 import ExpenseItem from './ExpenseItem';
 import './Expenses.css';
 
