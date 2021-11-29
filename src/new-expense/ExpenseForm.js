@@ -2,38 +2,56 @@ import { useState } from 'react';
 import './ExpenseForm.css';
 
 export default function ExpenseForm() {
-  // const [enteredTitle, setEnteredTitle] = useState('');
-  // const [enteredAmount, setEnteredAmount] = useState('');
-  // const [enteredDate, setEnteredDate] = useState('');
+  const [enteredTitle, setEnteredTitle] = useState('');
+  const [enteredAmount, setEnteredAmount] = useState('');
+  const [enteredDate, setEnteredDate] = useState('');
 
-  const [userInput, setUserInput] = useState({
-    enteredTitle: '',
-    enteredAmount: '',
-    enteredDate: ''
-  });
+  // const [userInput, setUserInput] = useState({
+  //   enteredTitle: '',
+  //   enteredAmount: '',
+  //   enteredDate: ''
+  // });
 
   const titleChangeHandler = (event) => {
-    // setEnteredTitle(event.target.value);
-    setUserInput({
-      ...userInput,
-      enteredTitle: event.target.value
-    });
+    setEnteredTitle(event.target.value);
+
+    // setUserInput({
+    //   ...userInput,
+    //   enteredTitle: event.target.value
+    // });
+
+    // setUserInput((prevState) => ({
+    //   ...prevState,
+    //   enteredTitle: event.target.value
+    // }));
   };
 
   const amountChangeHandler = (event) => {
-    // setEnteredAmount(event.target.value);
-    setUserInput({
-      ...userInput,
-      enteredAmount: event.target.value
-    });
+    setEnteredAmount(event.target.value);
+
+    // setUserInput({
+    //   ...userInput,
+    //   enteredAmount: event.target.value
+    // });
+
+    // setUserInput((prevState) => ({
+    //   ...prevState,
+    //   enteredAmount: event.target.value
+    // }));
   };
 
   const dateChangeHandler = (event) => {
-    // setEnteredDate(event.target.value);
-    setUserInput({
-      ...userInput,
-      enteredDate: event.target.value
-    });
+    setEnteredDate(event.target.value);
+
+    // setUserInput({
+    //   ...userInput,
+    //   enteredDate: event.target.value
+    // });
+
+    // setUserInput((prevState) => ({
+    //   ...prevState,
+    //   enteredDate: event.target.value
+    // }));
   };
 
   return (
@@ -44,7 +62,7 @@ export default function ExpenseForm() {
           <input
             type='text'
             id='title'
-            value={userInput.enteredTitle}
+            value={enteredTitle}
             onChange={titleChangeHandler}
           />
         </div>
@@ -55,7 +73,7 @@ export default function ExpenseForm() {
             id='amount'
             min='1'
             step='0.01'
-            value={userInput.enteredAmount}
+            value={enteredAmount}
             onChange={amountChangeHandler}
           />
         </div>
@@ -66,7 +84,7 @@ export default function ExpenseForm() {
             id='date'
             min='2019-01-01'
             max='2023-12-31'
-            value={userInput.enteredDate}
+            value={enteredDate}
             onChange={dateChangeHandler}
           />
         </div>
