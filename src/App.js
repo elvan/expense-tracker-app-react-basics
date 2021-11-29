@@ -26,6 +26,30 @@ export default function App() {
       title: 'Food and Groceries',
       amount: 610.75,
       date: new Date(2021, 5, 12)
+    },
+    {
+      id: 'e5',
+      title: 'Utility Bills',
+      amount: 543.25,
+      date: new Date(2020, 2, 12)
+    },
+    {
+      id: 'e6',
+      title: 'Cell Phone',
+      amount: 789.25,
+      date: new Date(2020, 4, 15)
+    },
+    {
+      id: 'e7',
+      title: 'School Costs',
+      amount: 1866.8,
+      date: new Date(2020, 7, 14)
+    },
+    {
+      id: 'e8',
+      title: 'Pet Food and Care',
+      amount: 819.5,
+      date: new Date(2021, 9, 25)
     }
   ];
 
