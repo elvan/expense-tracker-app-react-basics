@@ -64,6 +64,10 @@ export default function ExpenseForm() {
     };
 
     console.log(expenseData);
+
+    setEnteredTitle('');
+    setEnteredAmount('');
+    setEnteredDate('');
   };
 
   return (
