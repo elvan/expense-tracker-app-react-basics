@@ -1,3 +1,4 @@
+import React from 'react';
 import Chart from '../chart/Chart';
 
 export default function ExpensesChart(props) {
@@ -13,7 +14,7 @@ export default function ExpensesChart(props) {
     { label: 'Sep', value: 0 },
     { label: 'Okt', value: 0 },
     { label: 'Nov', value: 0 },
-    { label: 'Dec', value: 0 }
+    { label: 'Dec', value: 0 },
   ];
 
   for (const expense of props.expenses) {

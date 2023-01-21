@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import './ExpenseForm.css';
 
 export default function ExpenseForm(props) {
@@ -60,7 +60,7 @@ export default function ExpenseForm(props) {
     const expenseData = {
       title: enteredTitle,
       amount: +enteredAmount,
-      date: new Date(enteredDate)
+      date: new Date(enteredDate),
     };
 
     // console.log(expenseData);

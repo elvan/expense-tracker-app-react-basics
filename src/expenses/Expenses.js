@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import Card from '../core/Card';
 import './Expenses.css';
 import ExpensesChart from './ExpensesChart';

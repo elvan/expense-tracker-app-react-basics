@@ -1,3 +1,4 @@
+import React from 'react';
 import './ChartBar.css';
 
 export default function ChartBar(props) {
@@ -13,7 +14,7 @@ export default function ChartBar(props) {
         <div
           className='chart-bar__fill'
           style={{
-            height: barFillHeight
+            height: barFillHeight,
           }}
         ></div>
       </div>
